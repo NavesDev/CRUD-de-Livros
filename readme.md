@@ -1,4 +1,4 @@
-````markdown
+
 <div align="center">
   <a href="#versão-em-português-pt-br"><strong>PT-BR</strong></a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -62,16 +62,16 @@ $ ./crud_livros
 
 -----
 
-\<a name="english-version-en-us"\>\</a\>
+<a name="english-version-en-us"\></a\>
 
 ## 🇺🇸 English Version (EN-US)
 
-\<h1 align="center"\>Books CRUD in C\</h1\>
-\<p align="center"\>\<em\>A study project focused on implementing CRUD operations for book management.\</em\>\</p\>
+<h1 align="center"\>Books CRUD in C\</h1\>
+<p align="center"\>\<em\>A study project focused on implementing CRUD operations for book management.\</em\>\</p\>
 
-\<p align="center"\>
-\<strong\>Project Status:\</strong\> 🚧 Work in Progress 🚧
-\</p\>
+<p align="center"\>
+<strong\>Project Status:\</strong\> 🚧 Work in Progress 🚧
+</p\>
 
 <br>
 
@@ -117,5 +117,4 @@ $ gcc main.c -o books_crud
 $ ./books_crud
 ```
 
-```
-```
+
