@@ -1,4 +1,3 @@
-
 <div align="center">
   <a href="#versão-em-português-pt-br"><strong>PT-BR</strong></a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -56,65 +55,3 @@ $ gcc main.c -o crud_livros
 
 # 4. Execute o programa
 $ ./crud_livros
-````
-
-<br>
-
------
-
-<a name="english-version-en-us"\></a\>
-
-## 🇺🇸 English Version (EN-US)
-
-<h1 align="center"\>Books CRUD in C\</h1\>
-<p align="center"\>\<em\>A study project focused on implementing CRUD operations for book management.\</em\>\</p\>
-
-<p align="center"\>
-<strong\>Project Status:\</strong\> 🚧 Work in Progress 🚧
-</p\>
-
-<br>
-
-### 🎯 About The Project
-
-Academic project developed for the **Structured Programming in C** course. The main focus was to apply the concepts of a **linked list** to manage data (books) in memory, executing the four basic data persistence operations.
-
-<br>
-
-### ✨ Features
-
-  * 📖 **Create:** Adds new books to the list.
-  * 📚 **Read:** Displays all registered books.
-  * ✏️ **Update:** Edits the information of an existing book.
-  * ❌ **Delete:** Removes a book from the list.
-
-<br>
-
-### 🛠️ Technologies
-
-The following tools were used in the construction of the project:
-
-  * **C** (Programming Language)
-  * **GCC** (Compiler)
-
-<br>
-
-### ⚙️ Getting Started
-
-To run this project, you will need to have the `gcc` compiler (or similar) installed on your machine.
-
-```bash
-# 1. Clone this repository
-$ git clone [https://github.com/NavesDev/CRUD-de-Livros.git](https://github.com/NavesDev/CRUD-de-Livros.git)
-
-# 2. Access the project folder
-$ cd CRUD-de-Livros
-
-# 3. Compile the program (the main file is 'main.c')
-$ gcc main.c -o books_crud
-
-# 4. Run the program
-$ ./books_crud
-```
-
-
