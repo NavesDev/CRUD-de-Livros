@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int ids_livros=0;
-// Nós para estrutura de lista s
+// Nós para estrutura de lista 
 struct no{
     struct no* ultimo_no;
     char nome_livro[100];
@@ -11,10 +10,12 @@ struct no{
     int id;
 };
 
-// Cabeça e cauda, para gerenciamento de listas
-struct no* head = NULL;
 
 
+struct no* head = NULL; // Cabeça, para gerenciamento da lista
+int ids_livros=0;
+
+// Função que acrescenta na lista um novo livro
 void cadastrarLivro(){
     char nome_livro[100]; 
     char autor[80];
@@ -36,13 +37,7 @@ void cadastrarLivro(){
     printf("%s","\nCadastrado com sucesso!");
 }
 
-void buscarLivro(){
-    
-}
-
-// Constantes para a função ver livros
-const int TAMANHO_INICIAL = 32;
-
+// Função que apresenta em tela todos os livros da lista
 void verLivros(){
     if (head==NULL){
         printf("%s","\nNenhum livro cadastrado!\n");
@@ -53,12 +48,12 @@ void verLivros(){
     printf("%s","\n---/ Registro dos livros /---\n\n");
     do{
         printf("\nID: %i",no_atual->id);
-        printf("\nTítulo: %s",no_atual->nome_livro);
+        printf("\nTitulo: %s",no_atual->nome_livro);
         printf("\nAutor: %s",no_atual->autor);
         printf("\n");
         no_atual = no_atual->ultimo_no;
     } while (no_atual != NULL);
-
+    printf("\n");
 
 }
 
@@ -66,7 +61,7 @@ int main(){
     int escolha = 0;
     while (1)
     {
-        printf("%s", ":--- Registro de empréstimos ---: \n\n");
+        printf("%s", ":--- Registro de emprestimos ---: \n\n");
         printf("%s","1. Cadastrar livro\n2. Todos os livros\n3. Sair\n");
         scanf("%i",&escolha);
         if(escolha == 1){
@@ -77,6 +72,8 @@ int main(){
         }
         else if(escolha==3){
             break;
+        } else {
+            printf("Opcao invalida\n");
         }
     }
 
