@@ -22,9 +22,9 @@ void cadastrarLivro(){
     novo_no = malloc(sizeof(struct no));
 
     printf("%s","Digite o nome do livro a ser cadastrado: ");
-    scanf("%99s",nome_livro);
+    scanf("%s",nome_livro);
     printf("%s","\nDigite o autor do livro a ser cadastrado: ");
-    scanf("%79s",autor);
+    scanf("%s",autor);
 
     novo_no->id = ids_livros++;
     novo_no->ultimo_no = head;
@@ -57,7 +57,7 @@ void verLivros(){
         printf("\nAutor: %s",no_atual->autor);
         printf("\n");
         no_atual = no_atual->ultimo_no;
-    } while (no_atual->ultimo_no != NULL);
+    } while (no_atual != NULL);
 
 
 }
